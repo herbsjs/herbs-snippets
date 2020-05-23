@@ -1,0 +1,27 @@
+{
+    "Buchu":{
+        "prefix": "uc",
+        "body": [
+            "const { Ok, Err, usecase, step, ifElse } = require('../../../src/buchu')",
+            "",
+            "const dependency = {}",
+            "",
+            "const ${1:myUseCase} = (injection) =>",
+            "",
+            "usecase(\"${2:My use case definition}\", {",
+            "",
+            "request: { param: String },",
+            "",
+            "authorize: (user) => user.isAdmin ? Ok() : Err(),",
+            "",
+            "setup: (ctx) => ctx.di = Object.assign({}, dependency, injection),",
+            "",
+            "\"${2:My first step definition}\": step((ctx) => {",
+            "return Ok()",
+            "})",
+            "})",
+            "$0",
+            "module.exports = { ${1:myUseCase} }",
+        ]
+    }
+}
