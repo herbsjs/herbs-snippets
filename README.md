@@ -1,17 +1,39 @@
 # Herbs Snippets
 
-This is an extension that bring snippets to use with your project HerbsJS.
+This extension for Visual Studio Code adds snippets for HerbsJS.
 
-## Extension Settings
+## Usage
+Type the keywords in snippet e.g., "step" and press enter.
 
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
+----------
+#### Buchu
 
-For example:
+	UC - Use Case
+	STEP - Normal Step
+	IFSTEP - Conditional Step
+	USEC - Use Case Instantiation
 
-This extension contributes the following settings:
+----------
 
-* `myExtension.enable`: enable/disable this extension
-* `myExtension.thing`: set to `blah` to do something
+#### Gotu
+
+	ENT - Entity
+	FIE- Primitive Field
+	FIEV - Field With Suma Validation
+	FJS - Entity From Json
+
+----------
+
+Alternatively, one can also just press Ctrl+Space (Windows, Linux) or Cmd+Space (OSX) to access the available snippets in the editor.
+
+## Installation
+
+1. Install Visual Studio Code
+1. Launch VS Code
+1. From the command palette Ctrl+Shift+P (Windows, Linux) or Cmd+Shift+P (OSX)
+1. Type ext install or just simply select Install Extension
+1. Choose the extension - Herbs Snippets
+1. Relaunch VS Code
 
 ## Releases 
 
