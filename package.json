@@ -1,16 +1,16 @@
 {
     "name": "herbs-snippets",
-    "displayName": "Herbs-Snippets",
-    "description": "This is a simple project with snippets to work with HerbsJS",
+    "displayName": "Herbs Snippets",
+    "description": "This extension for Visual Studio Code adds snippets for HerbsJS",
     "version": "1.0.0",
-    "publisher": "Enderson Costa",
-    "icon": "https://avatars3.githubusercontent.com/u/60399865?s=200&v=4",
+    "publisher": "EndersonCosta",
+    "icon": "logo.jpg",
     "engines": {
         "vscode": "^1.45.0"
     },
     "repository": {
         "type": "git",
-        "url": ""
+        "url": "https://github.com/endersoncosta/herbs-snippets"
     },
     "categories": [
         "Snippets"
