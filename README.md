@@ -5,7 +5,6 @@ This extension for Visual Studio Code adds snippets for HerbsJS.
 ## Usage
 Type the keywords in snippet e.g., "step" and press enter.
 
-----------
 #### Buchu
 
 	UC - Use Case
