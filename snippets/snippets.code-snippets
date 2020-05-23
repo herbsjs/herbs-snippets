@@ -1,27 +1,93 @@
 {
-    "Buchu":{
-        "prefix": "uc",
-        "body": [
-            "const { Ok, Err, usecase, step, ifElse } = require('../../../src/buchu')",
-            "",
-            "const dependency = {}",
-            "",
-            "const ${1:myUseCase} = (injection) =>",
-            "",
-            "usecase(\"${2:My use case definition}\", {",
-            "",
-            "request: { param: String },",
-            "",
-            "authorize: (user) => user.isAdmin ? Ok() : Err(),",
-            "",
-            "setup: (ctx) => ctx.di = Object.assign({}, dependency, injection),",
-            "",
-            "\"${2:My first step definition}\": step((ctx) => {",
-            "return Ok()",
-            "})",
-            "})",
-            "$0",
-            "module.exports = { ${1:myUseCase} }",
-        ]
-    }
+  "Buchu - Use Case": {
+    "prefix": "uc",
+    "body": [
+      "const ${1:myUseCase} = (injection) =>",
+      "",
+      "   usecase(\"${2:My use case definition}\", {",
+      "",
+      "       request: { param: String },",
+      "",
+      "      authorize: (user) => user.isAdmin ? Ok() : Err(),",
+      "",
+      "       setup: (ctx) => ctx.di = Object.assign({}, dependency, injection),",
+      "",
+      "       \"${2:My first step definition}\": step((ctx) => {",
+      "           return Ok()",
+      "       })",
+      "   })",
+      "",
+      "module.exports = { ${1:myUseCase} }"
+    ]
+  },
+
+  "Buchu - Normal Step": {
+    "prefix": "step",
+    "body": [
+      "\"${1:Description of step}\": step((ctx) => {",
+      "    return Ok()",
+      "})"
+    ]
+  },
+
+  "Buchu - Conditional Step": {
+    "prefix": "ifstep",
+    "body": [
+      "\"${1:Description of conditional rule}\": ifElse({",
+      "",
+      "     \"${2:Conditional logic}\": step(async (ctx) => {",
+      "         return Ok(true || false)",
+      "     }),",
+      "    ",
+      "     \"${3:Then: True condition}\": step(async (ctx) => {",
+      "         return Ok() || Error()",
+      "     }),",
+      "    ",
+      "     \"${4:Else: False condition}\": step(async (ctx) => {",
+      "         return Ok() || Error()",
+      "     })",
+      "})"
+    ]
+  },
+
+  "Buchu - Use Case Instantiation":{
+      "prefix": "usec",
+      "body": [
+        "const ${1:uc} = ${2:MyUseCase}()",
+        "const ucDocumentation = ${1:uc}.doc()",
+        "${1:uc}.authorize(${3:userAuthorization})",
+        "const ${5:result} = await ${1:uc}.run(${4:requestParams})",
+        "const ucAudit = ${5:result}.auditTrail(); ",
+      ]
+  },
+
+  "Gotu - Entity": {
+    "prefix": "ent",
+    "body": [
+        "entity('${1:user}', {",
+        "    ${2:prop}: field(${3:type}),",
+        "})",
+    ]
+  },
+
+  "Gotu - Primitive field": {
+      "prefix": "fie",
+      "body": "${1:name}: field(${2:type})"
+  },
+  
+  "Gotu - Field with SUMA validation": {
+      "prefix": "fiev",
+      "body": [
+        "${1:name}: field(${2:type}, validation:{",
+            "${3:presence}:${4:true},",   
+        "})"
+    ]
+  },
+
+  "Gotu - From JSON":{
+      "prefix": "fjs",
+      "body": [
+          "({1:Entity}.fromJSON(${2:param})"
+      ]
+  }
 }
