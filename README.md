@@ -1,29 +1,41 @@
 # Herbs Snippets
 
-This extension for Visual Studio Code adds snippets for HerbsJS.
+This extension for Visual Studio Code adds snippets for [HerbsJS](https://github.com/herbsjs).
 
-## Usage
+-----------
+
+## Usage Example
 Type the keywords in snippet e.g., "step" and press enter.
-
-#### Buchu
-
-	UC - Use Case
-	STEP - Normal Step
-	IFSTEP - Conditional Step
-	USEC - Use Case Instantiation
-
-----------
-
-#### Gotu
-
-	ENT - Entity
-	FIE- Primitive Field
-	FIEV - Field With Suma Validation
-	FJS - Entity From Json
-
-----------
-
 Alternatively, one can also just press Ctrl+Space (Windows, Linux) or Cmd+Space (OSX) to access the available snippets in the editor.
+
+![](example.gif)
+
+-----------
+
+## Snippets
+
+#### ◈ Buchu ◈
+
+| Trigger  | Content |
+| -------: | ------- |
+| `uc→`   | Generate **Buchu** entire UseCase `...  usecase("My use case definition", { ...`	|
+| `step→`   | Create a **Buchu** step `"Description of step": step( (ctx) => { return Ok() } )` |
+| `ifstep→`   | Create a **Buchu** conditional Step  `"Description of conditional rule": ifElse( {` |
+| `usec→`   | Generate instantiation of **Buchu** Usecase with all available functions |
+
+
+
+#### ◈ Gotu ◈
+
+| Trigger  | Content |
+| -------: | ------- |
+| `ent→`   | Generate entire **Gotu** entity `entity('user', { prop: field(type) } )`|
+| `fie→`   | Create a **Gotu** entity field `name: field(type)` |
+| `fiev→`   | Create a **Gotu** entity field with **Suma** validation params  `name: field(type, { validation: { presence: true } } } )` |
+| `fjs→`   | Generate instantiation **Gotu** Entity `Entity.fromJSON(params)` |
+
+----------
+
 
 ## Installation
 
@@ -34,10 +46,17 @@ Alternatively, one can also just press Ctrl+Space (Windows, Linux) or Cmd+Space 
 1. Choose the extension - Herbs Snippets
 1. Relaunch VS Code
 
+-----------
+
 ## Releases 
+
+### 1.0.1
+
+- Fix of **Gotu** snippets
+- Improve the documentation
 
 ### 1.0.0
 
-Initial release of Herbs Snippets
+- Initial release of Herbs Snippets
 
 **Enjoy!**
