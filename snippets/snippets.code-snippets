@@ -78,16 +78,16 @@
   "Gotu - Field with SUMA validation": {
       "prefix": "fiev",
       "body": [
-        "${1:name}: field(${2:type}, validation:{",
+        "${1:name}: field(${2:type}, { validation:{",
             "${3:presence}:${4:true},",   
-        "})"
+        "}})"
     ]
   },
 
   "Gotu - From JSON":{
       "prefix": "fjs",
       "body": [
-          "({1:Entity}.fromJSON(${2:param})"
+          "${1:Entity}.fromJSON(${2:params})"
       ]
   }
 }
