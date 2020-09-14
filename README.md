@@ -8,7 +8,7 @@ This extension for Visual Studio Code adds snippets for [HerbsJS](https://github
 Type the keywords in snippet e.g., "step" and press enter.
 Alternatively, one can also just press Ctrl+Space (Windows, Linux) or Cmd+Space (OSX) to access the available snippets in the editor.
 
-![](example.gif)
+![](docs/example.gif)
 
 -----------
 
