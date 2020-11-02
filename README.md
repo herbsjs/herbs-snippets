@@ -48,7 +48,16 @@ Alternatively, one can also just press Ctrl+Space (Windows, Linux) or Cmd+Space 
 
 -----------
 
+## Building a new version
+
+
+-----------
+
 ## Releases 
+
+### 1.0.2
+
+- Fix of the automatic deploy
 
 ### 1.0.1
 
