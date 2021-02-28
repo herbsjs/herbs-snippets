@@ -8,6 +8,10 @@
   "engines": {
     "vscode": "^1.45.0"
   },
+  "scripts": {
+    "lint": "npx eslint \"**/*.{js,jsx}\" --quiet",
+    "lint:fix": "npx eslint \"**/*.{js,jsx}\" --fix"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/endersoncosta/herbs-snippets"
