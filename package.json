@@ -2,7 +2,7 @@
   "name": "herbs-snippets",
   "displayName": "Herbs Snippets",
   "description": "This extension for Visual Studio Code adds snippets for HerbsJS",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "publisher": "EndersonCosta",
   "icon": "docs/logo.jpg",
   "engines": {

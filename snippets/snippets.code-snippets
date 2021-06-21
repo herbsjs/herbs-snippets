@@ -62,7 +62,7 @@
   "Return Ok": {
     "prefix": "rok",
     "body": [
-      "return Err()",
+      "return Ok()",
     ]
   },
 
