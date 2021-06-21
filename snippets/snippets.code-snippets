@@ -4,20 +4,29 @@
     "body": [
       "const ${1:myUseCase} = (injection) =>",
       "",
-      "   usecase(\"${2:My use case definition}\", {",
+      "  usecase(\"${2:My use case definition}\", {",
       "",
-      "       request: { param: String },",
+      "    request: { param: String },",
       "",
-      "      authorize: (user) => user.isAdmin ? Ok() : Err(),",
+      "    authorize: async (user) => user.isAdmin ? Ok() : Err(),",
       "",
-      "       setup: (ctx) => ctx.di = Object.assign({}, dependency, injection),",
+      "    setup: (ctx) => ctx.di = Object.assign({}, dependency, injection),",
       "",
-      "       \"${2:My first step definition}\": step((ctx) => {",
-      "           return Ok()",
-      "       })",
-      "   })",
+      "    \"${2:My first step definition}\": step((ctx) => {",
+      "      return Ok()",
+      "    })",
+      "  })",
       "",
       "module.exports = { ${1:myUseCase} }"
+    ]
+  },
+
+  "Buchu - Async Step": {
+    "prefix": "astep",
+    "body": [
+      "\"${1:Description of step}\": step(async ctx => {",
+      "  return Ok()",
+      "})"
     ]
   },
 
@@ -25,32 +34,46 @@
     "prefix": "step",
     "body": [
       "\"${1:Description of step}\": step((ctx) => {",
-      "    return Ok()",
+      "  return Ok()",
       "})"
     ]
   },
 
-  "Buchu - Conditional Step": {
+  "Conditional Step": {
     "prefix": "ifstep",
     "body": [
       "\"${1:Description of conditional rule}\": ifElse({",
       "",
-      "     \"${2:Conditional logic}\": step(async (ctx) => {",
-      "         return Ok(true || false)",
-      "     }),",
+      "  \"${2:Conditional logic}\": step(async (ctx) => {",
+      "    return Ok(true || false)",
+      "  }),",
       "    ",
-      "     \"${3:Then: True condition}\": step(async (ctx) => {",
-      "         return Ok() || Error()",
-      "     }),",
+      "  \"${3:Then: True condition}\": step(async (ctx) => {",
+      "    return Ok() || Error()",
+      "  }),",
       "    ",
-      "     \"${4:Else: False condition}\": step(async (ctx) => {",
-      "         return Ok() || Error()",
-      "     })",
+      "  \"${4:Else: False condition}\": step(async (ctx) => {",
+      "    return Ok() || Error()",
+      "  })",
       "})"
     ]
   },
 
-  "Buchu - Use Case Instantiation":{
+  "Return Ok": {
+    "prefix": "rok",
+    "body": [
+      "return Err()",
+    ]
+  },
+
+  "Return Err": {
+    "prefix": "rerr",
+    "body": [
+      "return Err(${1:error})",
+    ]
+  },
+
+  "Use Case Instantiation":{
       "prefix": "usec",
       "body": [
         "const ${1:uc} = ${2:MyUseCase}()",
@@ -61,7 +84,7 @@
       ]
   },
 
-  "Gotu - Entity": {
+  "Entity": {
     "prefix": "ent",
     "body": [
         "entity('${1:user}', {",
@@ -70,12 +93,12 @@
     ]
   },
 
-  "Gotu - Primitive field": {
+  "Entity primitive field": {
       "prefix": "fie",
       "body": "${1:name}: field(${2:type})"
   },
   
-  "Gotu - Field with SUMA validation": {
+  "Entity with validation": {
       "prefix": "fiev",
       "body": [
         "${1:name}: field(${2:type}, { validation:{",
@@ -84,10 +107,17 @@
     ]
   },
 
-  "Gotu - From JSON":{
+  "Entity - From JSON":{
       "prefix": "fjs",
       "body": [
           "${1:Entity}.fromJSON(${2:params})"
+      ]
+  },
+
+  "Herbs Entity Validation":{
+      "prefix": "validation",
+      "body": [
+          "{validation: {${1:validation}}}"
       ]
   }
 }
