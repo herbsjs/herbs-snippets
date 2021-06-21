@@ -50,6 +50,10 @@ Alternatively, one can also just press Ctrl+Space (Windows, Linux) or Cmd+Space 
 
 ## Releases 
 
+### 1.0.3
+
+- Update snippets
+
 ### 1.0.2
 
 - Fix of the automatic deploy
