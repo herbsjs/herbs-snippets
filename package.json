@@ -32,16 +32,5 @@
     "snippets",
     "herbs-snippets"
   ],
-  "license": "MIT",
-  "devDependencies": {
-    "babel-eslint": "^10.1.0",
-    "eslint": "^7.9.0",
-    "eslint-config-prettier": "^6.11.0",
-    "eslint-plugin-import": "^2.22.0",
-    "eslint-plugin-prettier": "^3.1.4",
-    "gotu": "^1.0.6",
-    "mocha": "^8.1.3",
-    "nyc": "^15.1.0",
-    "prettier": "^2.1.1"
-  }
+  "license": "MIT"
 }
