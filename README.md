@@ -14,25 +14,25 @@ Alternatively, one can also just press Ctrl+Space (Windows, Linux) or Cmd+Space 
 
 ## Snippets
 
-#### ◈ Buchu ◈
+#### ◈ UseCases ◈
 
 | Trigger  | Content |
 | -------: | ------- |
-| `uc→`   | Generate **Buchu** entire UseCase `...  usecase("My use case definition", { ...`	|
-| `step→`   | Create a **Buchu** step `"Description of step": step( (ctx) => { return Ok() } )` |
-| `ifstep→`   | Create a **Buchu** conditional Step  `"Description of conditional rule": ifElse( {` |
-| `usec→`   | Generate instantiation of **Buchu** Usecase with all available functions |
+| `uc→`   | Generate **Herbs** entire UseCase `...  usecase("My use case definition", { ...`	|
+| `step→`   | Create a **Herbs** step `"Description of step": step( (ctx) => { return Ok() } )` |
+| `ifstep→`   | Create a **Herbs** conditional Step  `"Description of conditional rule": ifElse( {` |
+| `usec→`   | Generate instantiation of **Herbs** Usecase with all available functions |
 
 
 
-#### ◈ Gotu ◈
+#### ◈ Entities ◈
 
 | Trigger  | Content |
 | -------: | ------- |
-| `ent→`   | Generate entire **Gotu** entity `entity('user', { prop: field(type) } )`|
-| `fie→`   | Create a **Gotu** entity field `name: field(type)` |
-| `fiev→`   | Create a **Gotu** entity field with **Suma** validation params  `name: field(type, { validation: { presence: true } } } )` |
-| `fjs→`   | Generate instantiation **Gotu** Entity `Entity.fromJSON(params)` |
+| `ent→`   | Generate entire **Herbs** entity `entity('user', { prop: field(type) } )`|
+| `fie→`   | Create a **Herbs** entity field `name: field(type)` |
+| `fiev→`   | Create a **Herbs** entity field with validation params  `name: field(type, { validation: { presence: true } } } )` |
+| `fjs→`   | Generate instantiation **Herbs** Entity `Entity.fromJSON(params)` |
 
 ----------
 
@@ -40,11 +40,11 @@ Alternatively, one can also just press Ctrl+Space (Windows, Linux) or Cmd+Space 
 ## Installation
 
 1. Install Visual Studio Code
-1. Launch VS Code
-1. From the command palette Ctrl+Shift+P (Windows, Linux) or Cmd+Shift+P (OSX)
-1. Type ext install or just simply select Install Extension
-1. Choose the extension - Herbs Snippets
-1. Relaunch VS Code
+2. Launch VS Code
+3. From the command palette Ctrl+Shift+P (Windows, Linux) or Cmd+Shift+P (OSX)
+4. Type ext install or just simply select Install Extension or access the [marketplace link](https://marketplace.visualstudio.com/items?itemName=EndersonCosta.herbs-snippets)
+5. Choose the extension - Herbs Snippets
+6. Relaunch VS Code
 
 -----------
 

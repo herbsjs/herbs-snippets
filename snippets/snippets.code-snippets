@@ -1,5 +1,5 @@
 {
-  "Buchu - Use Case": {
+  "Herbs - Use Case": {
     "prefix": "uc",
     "body": [
       "const ${1:myUseCase} = (injection) =>",
@@ -21,7 +21,7 @@
     ]
   },
 
-  "Buchu - Async Step": {
+  "Herbs - Async Step": {
     "prefix": "astep",
     "body": [
       "\"${1:Description of step}\": step(async ctx => {",
@@ -30,7 +30,7 @@
     ]
   },
 
-  "Buchu - Normal Step": {
+  "Herbs - Normal Step": {
     "prefix": "step",
     "body": [
       "\"${1:Description of step}\": step((ctx) => {",
