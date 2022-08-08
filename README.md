@@ -36,6 +36,12 @@ Alternatively, one can also just press Ctrl+Space (Windows, Linux) or Cmd+Space 
 
 ----------
 
+#### ◈ Aloe ◈
+| Trigger  | Content |
+| -------: | ------- |
+| `spec→`   | Generate **Aloe** spec `... const spec = spec({...`	|
+| `scenario→`   | Generate **Aloe** scenario `... 'Scenario name': scenario({...`	|
+
 
 ## Installation
 
