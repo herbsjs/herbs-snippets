@@ -56,6 +56,11 @@ Alternatively, one can also just press Ctrl+Space (Windows, Linux) or Cmd+Space 
 
 ## Releases 
 
+
+### 1.0.5
+
+- Add aloe snippets
+
 ### 1.0.4
 
 - Return Ok Fix
