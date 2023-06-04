@@ -49,11 +49,11 @@
       "  }),",
       "    ",
       "  \"${3:Then: True condition}\": step(async (ctx) => {",
-      "    return Ok() || Error()",
+      "    return Ok() || Err()",
       "  }),",
       "    ",
       "  \"${4:Else: False condition}\": step(async (ctx) => {",
-      "    return Ok() || Error()",
+      "    return Ok() || Err()",
       "  })",
       "})"
     ]
